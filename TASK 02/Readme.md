@@ -1,49 +1,48 @@
-# JavaScript dan TypeScript Functions
+# JavaScript and TypeScript Functions
 
-Repository ini berisi implementasi 5 fungsi dasar menggunakan JavaScript dan TypeScript yang dikembangkan untuk tugas mata kuliah Web Client Development.
+This repository contains implementations of 5 basic functions using JavaScript and TypeScript developed for the Web Client Development course.
 
-[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://bit.ly/4k4DSky)
-![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
+[![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://bit.ly/4k4DSky) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Daftar Fungsi
+## List of Functions
 
-### 1. Konversi Suhu Fahrenheit ke Celsius
-- **Input**: Suhu dalam Fahrenheit (contoh: 100)
-- **Output**: Suhu dalam Celsius (contoh: 37.78)
-- **File**: `js/temperatureConverter.js` dan `ts/temperatureConverter.ts`
+### 1. Fahrenheit to Celsius Temperature Conversion
+- **Input**: Temperature in Fahrenheit (example: 100)
+- **Output**: Temperature in Celsius (example: 37.78)
+- **File**: `js/temperatureConverter.js` and `ts/temperatureConverter.ts`
 
-### 2. Konversi Panjang (cm ke km atau sebaliknya)
-- **Input**: Nilai dan unit (contoh: 10000, "cm")
-- **Output**: Hasil konversi (contoh: "0.1 km")
-- **File**: `js/lengthConverter.js` dan `ts/lengthConverter.ts`
+### 2. Length Conversion (cm to km or vice versa)
+- **Input**: Value and unit (example: 10000, "cm")
+- **Output**: Conversion result (example: "0.1 km")
+- **File**: `js/lengthConverter.js` and `ts/lengthConverter.ts`
 
-### 3. Cek Bilangan Ganjil atau Genap
-- **Input**: Sebuah bilangan (contoh: 1000)
-- **Output**: Boolean (true jika genap, false jika ganjil)
-- **File**: `js/evenOddChecker.js` dan `ts/evenOddChecker.ts`
+### 3. Even or Odd Number Check
+- **Input**: A number (example: 1000)
+- **Output**: Boolean (true if even, false if odd)
+- **File**: `js/evenOddChecker.js` and `ts/evenOddChecker.ts`
 
-### 4. Pencarian String
-- **Input**: String dan pattern pencarian (contoh: "Hello world", "ell")
-- **Output**: Indeks kemunculan pertama (contoh: 1)
-- **File**: `js/stringFinder.js` dan `ts/stringFinder.ts`
+### 4. String Search
+- **Input**: String and search pattern (example: "Hello world", "ell")
+- **Output**: First occurrence index (example: 1)
+- **File**: `js/stringFinder.js` and `ts/stringFinder.ts`
 
-### 5. Cek Palindrom
-- **Input**: Sebuah string (contoh: "madam")
-- **Output**: Boolean (true jika palindrom, false jika bukan)
-- **File**: `js/palindromeChecker.js` dan `ts/palindromeChecker.ts`
+### 5. Palindrome Check
+- **Input**: A string (example: "madam")
+- **Output**: Boolean (true if palindrome, false if not)
+- **File**: `js/palindromeChecker.js` and `ts/palindromeChecker.ts`
 
-## Cara Penggunaan
+## How to Use
 
 ### JavaScript
 ```javascript
-// Contoh penggunaan fungsi konversi suhu
+// Example of using the temperature conversion function
 const tempInFahrenheit = 100; // 100°F
-console.log(`${tempInFahrenheit}°F = ${convertFahrenheitToCelsius(tempInFahrenheit)}°C`);
-// Output: 100°F = 37.78°C
+console.log(`${tempInFahrenheit}°F = ${convertFahrenheitToCelsius(tempInFahrenheit)}°C`); // Output: 100°F = 37.78°C
+```
 
-typescript
-// Contoh penggunaan fungsi konversi suhu
+### TypeScript
+```typescript
+// Example of using the temperature conversion function
 const tempInFahrenheit: number = 100; // 100°F
-console.log(`${tempInFahrenheit}°F = ${convertFahrenheitToCelsius(tempInFahrenheit)}°C`);
-// Output: 100°F = 37.78°C
+console.log(`${tempInFahrenheit}°F = ${convertFahrenheitToCelsius(tempInFahrenheit)}°C`); // Output: 100°F = 37.78°C
+```
