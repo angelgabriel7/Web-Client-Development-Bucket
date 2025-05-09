@@ -1,59 +1,59 @@
 # WorkoutAja - CSS Bug Fixes and Style Improvements
 
-Repository ini berisi perbaikan bug CSS dan peningkatan styling untuk proyek WorkoutAja, sebuah website untuk layanan fitness dan workout.
+This repository contains CSS bug fixes and styling improvements for the WorkoutAja project, a website for fitness and workout services.
 
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://bit.ly/4jVxbSk)
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
-## Bug yang Diperbaiki
+## Fixed Bugs
 
-1. Warna tidak menggunakan format yang benar - Menambahkan tanda pagar untuk semua warna CSS
-   - Contoh perbaikan: `color: 000;` → `color: #000;`
+1. Colors not using the correct format - Added hash symbol for all CSS colors
+   - Example fix: `color: 000;` → `color: #000;`
 
-2. Selector CSS untuk balls tidak benar - Memperbaiki selector `balls` menjadi `#balls` untuk elemen dengan ID
+2. Incorrect CSS selector for balls - Fixed the `balls` selector to `#balls` for elements with ID
 
-3. Syntax CSS tidak valid - Menghapus tanda kutip (``) pada awal file CSS yang membuat syntax tidak valid
+3. Invalid CSS syntax - Removed quotation marks (``) at the beginning of CSS file that made the syntax invalid
 
-4. Posisi elemen dekoratif (balls) salah - Mengubah posisi balls dari `right: 0px` menjadi `left: 0px` agar sesuai dengan desain
+4. Wrong position of decorative elements (balls) - Changed the position of balls from `right: 0px` to `left: 0px` to match the design
 
-5. Gambar hilang atau tidak tampil - Memperbaiki CSS untuk memastikan semua gambar tampil dengan benar
+5. Missing or not displaying images - Fixed CSS to ensure all images display correctly
 
-6. Responsivitas tidak optimal - Menambahkan media queries untuk tampilan yang lebih responsif pada berbagai ukuran layar
+6. Suboptimal responsiveness - Added media queries for more responsive display on various screen sizes
 
-## Style yang Ditambahkan
+## Added Styles
 
-1. Box-sizing yang konsisten - Menambahkan `box-sizing: border-box` untuk memastikan dimensi elemen lebih konsisten
+1. Consistent box-sizing - Added `box-sizing: border-box` to ensure more consistent element dimensions
 
-2. Peningkatan hover effect - Memperbaiki efek hover pada link navigasi dan tombol
+2. Improved hover effects - Fixed hover effects on navigation links and buttons
 
-3. Penyesuaian ukuran gambar - Mengatur ukuran gambar agar proporsional dan responsif
+3. Image size adjustments - Set image sizes to be proportional and responsive
 
-4. Transisi yang lebih mulus - Menambahkan transisi untuk efek hover yang lebih halus
+4. Smoother transitions - Added transitions for smoother hover effects
 
-5. Z-index untuk layering - Menggunakan z-index untuk mengatur tumpukan elemen yang tepat
+5. Z-index for layering - Used z-index to arrange proper element stacking
 
-## Best Practices yang Diimplementasikan
+## Implemented Best Practices
 
-1. Valid CSS Syntax - Memastikan syntax CSS valid dan sesuai standar
+1. Valid CSS Syntax - Ensuring valid and standard-compliant CSS syntax
 
-2. Pemisahan Concerns - Menjaga pemisahan antara HTML (struktur) dan CSS (presentasi)
+2. Separation of Concerns - Maintaining separation between HTML (structure) and CSS (presentation)
 
-3. Konsistensi Warna - Menggunakan format warna yang konsisten
+3. Color Consistency - Using consistent color formats
 
-4. Responsif Design Principles - Menerapkan prinsip desain responsif untuk tampilan yang optimal
+4. Responsive Design Principles - Applying responsive design principles for optimal display
 
-5. Semantic HTML - Mempertahankan penggunaan tag HTML yang semantik
+5. Semantic HTML - Maintaining the use of semantic HTML tags
 
-6. Cross-browser Compatibility - Memastikan tampilan konsisten di berbagai browser
+6. Cross-browser Compatibility - Ensuring consistent display across various browsers
 
-## Artikel Medium
+## Medium Article
 
-Untuk penjelasan lebih detail tentang CSS dan best practices yang diimplementasikan dalam proyek ini, baca artikel saya di Medium:
+For a more detailed explanation of CSS and best practices implemented in this project, read my article on Medium:
 
 [CSS Best Practices for Modern Web Development](https://bit.ly/4jVxbSk)
 
-## Sumber Referensi
+## Reference Sources
 
 - [Design Figma WorkoutAja](https://www.figma.com/design/CAawvDkcG4AloMWvHwrOvo/workoutaja?node-id=0:1&t=CfOiRcljPeT5PykW-1)
-- [GitHub Repository Original](https://github.com/cakrawala-university/web-client-development)
+- [Original GitHub Repository](https://github.com/cakrawala-university/web-client-development)
