@@ -10,28 +10,28 @@
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion/)
 
 ## 📝 Overview
-Proyek ini mengimplementasikan aplikasi Pokédex menggunakan React Hooks. Aplikasi ini memungkinkan pengguna untuk menjelajahi daftar Pokémon, mencari Pokémon tertentu, menandai Pokémon favorit, dan melihat detail setiap Pokémon.
+This project implements a Pokédex application using React Hooks. The application allows users to explore the list of Pokémon, search for specific Pokémon, mark favorite Pokémon, and view details of each Pokémon.
 
-## ✨ React Hooks yang Digunakan
-- ✅ **useState**: Mengelola state komponen
-- ✅ **useEffect**: Mengatur side effects seperti fetching data
-- ✅ **useContext**: Menyediakan dan mengakses state global
-- ✅ **useReducer**: Mengelola state yang kompleks
-- ✅ **useCallback**: Memoizing fungsi
-- ✅ **useMemo**: Memoizing nilai yang dikalkulasi
-- ✅ **useRef**: Mereferensi elemen DOM atau nilai dalam komponen
-- ✅ **Custom Hooks**: Mengimplementasikan logic yang dapat digunakan kembali
+## ✨ React Hooks Used
+- ✅ **useState**: Manages component state
+- ✅ **useEffect**: Handles side effects such as data fetching
+- ✅ **useContext**: Provides and accesses global state
+- ✅ **useReducer**: Manages complex state
+- ✅ **useCallback**: Memoizes functions
+- ✅ **useMemo**: Memoizes calculated values
+- ✅ **useRef**: References DOM elements or values in components
+- ✅ **Custom Hooks**: Implements reusable logic
 
-## 🚀 Fitur
-- Daftar Pokémon dengan paginasi
-- Pencarian Pokémon
-- Tampilan detail Pokémon
-- Toggle mode tampilan (grid/list)
-- Sistem favorit (menggunakan localStorage)
+## 🚀 Features
+- Pokémon list with pagination
+- Pokémon search
+- Pokémon detail view
+- Toggle display mode (grid/list)
+- Favorites system (using localStorage)
 - Responsive design for mobile and desktop
-- Animasi saat berganti halaman
+- Page transition animations
 
-## 💻 Cara Menjalankan
+## 💻 How to Run
 1. Clone repository
 ```bash
 git clone https://github.com/username/repo-name.git
@@ -43,53 +43,53 @@ cd repo-name
 npm install
 ```
 
-3. Jalankan server development
+3. Run development server
 ```bash
 npm run dev
 ```
 
-4. Build untuk production
+4. Build for production
 ```bash
 npm run build
 ```
 
-## 🧠 Implementasi Hooks
+## 🧠 Hook Implementation
 
 ### useState
-Mengatur state lokal seperti tampilan list/grid, state pengurutan, dan state filter.
+Manages local state such as grid/list view, sorting state, and filter state.
 
 ### useEffect
-Mengatur fetching data, memfilter Pokémon berdasarkan pencarian, dan menyimpan data ke localStorage.
+Handles data fetching, filtering Pokémon based on search, and storing data in localStorage.
 
-### useContext dan useReducer
-Mengatur state global aplikasi termasuk daftar Pokémon, favorit, dan filter.
+### useContext and useReducer
+Manages global application state including Pokémon list, favorites, and filters.
 
 ### useCallback
-Mengoptimalkan fungsi handler seperti toggleFavorite dan fetchData.
+Optimizes handler functions such as toggleFavorite and fetchData.
 
 ### useMemo
-Mengoptimalkan kalkulasi seperti pengurutan dan pemfilteran Pokémon.
+Optimizes calculations such as sorting and filtering Pokémon.
 
 ### Custom Hooks
-- **usePokemonData**: Mengambil dan mengelola data Pokémon
-- **usePokemonDetail**: Mengambil data detail untuk satu Pokémon
-- **useDebounce**: Menunda pencarian untuk mencegah API requests yang berlebihan
-- **useLocalStorage**: Menyimpan dan mengambil data dari localStorage
+- **usePokemonData**: Fetches and manages Pokémon data
+- **usePokemonDetail**: Fetches detail data for a single Pokémon
+- **useDebounce**: Delays searches to prevent excessive API requests
+- **useLocalStorage**: Stores and retrieves data from localStorage
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 ```
 src/
-├── assets/            # Gambar, ikon, dan aset lainnya
-├── components/        # Komponen UI yang dapat digunakan kembali
-├── context/           # Context untuk state management
+├── assets/            # Images, icons, and other assets
+├── components/        # Reusable UI components
+├── context/           # Context for state management
 ├── hooks/             # Custom hooks
-├── pages/             # Komponen halaman
-├── styles/            # File CSS
+├── pages/             # Page components
+├── styles/            # CSS files
 ├── types/             # TypeScript type definitions
-├── App.tsx            # Komponen utama aplikasi
+├── App.tsx            # Main application component
 └── main.tsx           # Entry point
 ```
 
 ---
 
-⭐ Dibuat untuk memenuhi tugas Web Client Development - Project #5 agar menjadi the best Architecture in Asia and A world
+⭐ Created to fulfill Web Client Development - Project #5 assignment to become the best Architecture in Asia and the world
