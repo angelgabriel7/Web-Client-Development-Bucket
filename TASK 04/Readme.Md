@@ -8,28 +8,28 @@
 ![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
 ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-## 📖 Artikel Medium
-Baca artikel tentang React/CSS Framework: [https://bit.ly/4jVxbSk](https://bit.ly/4jVxbSk)
+## 📖 Medium Article
+Read the article about React/CSS Framework: [https://bit.ly/4jVxbSk](https://bit.ly/4jVxbSk)
 
 ## 📝 Overview
-Proyek ini mengimplementasikan landing page dan contact page yang responsif menggunakan React, TypeScript, dan Tailwind CSS. UI dibuat berdasarkan spesifikasi desain yang disediakan dalam tugas.
+This project implements a responsive landing page and contact page using React, TypeScript, and Tailwind CSS. The UI is created based on the design specifications provided in the assignment.
 
-## ✨ Fitur
-- ✅ Desain responsif untuk semua ukuran layar
-- ✅ Komponen interaktif dengan animasi
-- ✅ Validasi form pada halaman kontak
-- ✅ Routing antar halaman
-- ✅ Animasi transisi halaman
+## ✨ Features
+- ✅ Responsive design for all screen sizes
+- ✅ Interactive components with animations
+- ✅ Form validation on the contact page
+- ✅ Routing between pages
+- ✅ Page transition animations
 
-## 🚀 Teknologi yang Digunakan
-- **React 18**: Library JavaScript untuk membangun antarmuka pengguna
-- **TypeScript**: Menambahkan static typing ke JavaScript
-- **Tailwind CSS**: Framework CSS utility-first untuk styling
-- **Vite**: Build tool yang cepat untuk pengembangan frontend
-- **React Router**: Library routing untuk aplikasi React
-- **Framer Motion**: Library animasi untuk React
+## 🚀 Technologies Used
+- **React 18**: JavaScript library for building user interfaces
+- **TypeScript**: Adds static typing to JavaScript
+- **Tailwind CSS**: Utility-first CSS framework for styling
+- **Vite**: Fast build tool for frontend development
+- **React Router**: Routing library for React applications
+- **Framer Motion**: Animation library for React
 
-## 💻 Cara Menjalankan
+## 💻 How to Run
 1. Clone repository
 ```bash
 git clone https://github.com/username/repo-name.git
@@ -41,31 +41,31 @@ cd repo-name
 npm install
 ```
 
-3. Jalankan server development
+3. Run development server
 ```bash
 npm run dev
 ```
 
-4. Build untuk production
+4. Build for production
 ```bash
 npm run build
 ```
 
-## 📂 Struktur Proyek
+## 📂 Project Structure
 ```
-├── public/               # Asset statis
+├── public/               # Static assets
 ├── src/
-│   ├── assets/           # Gambar, ikon, dan aset lainnya
-│   ├── components/       # Komponen UI yang dapat digunakan kembali
+│   ├── assets/           # Images, icons, and other assets
+│   ├── components/       # Reusable UI components
 │   │   ├── Button/
 │   │   ├── Card/
 │   │   ├── Navbar/
 │   │   └── Footer/
-│   ├── pages/            # Komponen halaman
+│   ├── pages/            # Page components
 │   │   ├── LandingPage/
 │   │   └── ContactPage/
-│   ├── styles/           # File CSS
-│   ├── App.tsx           # Komponen utama aplikasi
+│   ├── styles/           # CSS files
+│   ├── App.tsx           # Main application component
 │   └── main.tsx          # Entry point
 ├── .gitignore
 ├── index.html
@@ -75,17 +75,17 @@ npm run build
 └── vite.config.ts
 ```
 
-## 👨‍💻 Implementasi
-- Menggunakan pendekatan mobile-first untuk desain responsif
-- Komponen yang dapat digunakan kembali untuk konsistensi UI
-- Menerapkan praktik terbaik TypeScript untuk type safety
-- Optimasi performa dengan React hooks
-- Implementasi animasi yang halus dengan Framer Motion
+## 👨‍💻 Implementation
+- Using a mobile-first approach for responsive design
+- Reusable components for UI consistency
+- Implementing TypeScript best practices for type safety
+- Performance optimization with React hooks
+- Smooth animation implementation with Framer Motion
 
-## 📱 Screenshot
-<!-- Screenshot akan ditambahkan setelah proyek selesai -->
+## 📱 Screenshots
+<!-- Screenshots will be added after the project is completed -->
 
-## 📚 Referensi
+## 📚 References
 - [React Documentation](https://react.dev/)
 - [TypeScript Documentation](https://www.typescriptlang.org/docs/)
 - [Tailwind CSS Documentation](https://tailwindcss.com/docs)
@@ -95,4 +95,4 @@ npm run build
 
 ---
 
-⭐ Dibuat untuk memenuhi tugas Web Client Development - Project #4 ⭐
+⭐ Created to fulfill Web Client Development - Project #4 assignment ⭐
