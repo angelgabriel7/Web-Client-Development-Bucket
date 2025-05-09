@@ -1,47 +1,50 @@
-# JavaScript dan TypeScript Basic Functions
+# JavaScript and TypeScript Basic Functions
 
-Repository ini berisi implementasi 5 fungsi dasar menggunakan JavaScript dan TypeScript yang dikembangkan untuk tugas mata kuliah Web Client Development.
+This repository contains implementations of 5 basic functions using JavaScript and TypeScript, developed for a Web Client Development course assignment.
 
 [![Medium](https://img.shields.io/badge/Medium-12100E?style=for-the-badge&logo=medium&logoColor=white)](https://bit.ly/3GPn16X)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 ![TypeScript](https://img.shields.io/badge/typescript-%23007ACC.svg?style=for-the-badge&logo=typescript&logoColor=white)
 
-## Daftar Fungsi
+## List of Functions
 
-### 1. Menghitung Luas Persegi Panjang
+### 1. Calculate Rectangle Area
 - **Input**: length = 5, width = 3
 - **Output**: 15
-- **File**: `js/rectangle.js` dan `ts/rectangle.ts`
+- **File**: `js/rectangle.js` and `ts/rectangle.ts`
 
-### 2. Menghitung Diameter, Keliling, dan Luas Lingkaran
+### 2. Calculate Circle Diameter, Circumference, and Area
 - **Input**: radius = 5
 - **Output**: diameter = 10, circumference = 31.4159, area = 78.539
-- **File**: `js/circle.js` dan `ts/circle.ts`
+- **File**: `js/circle.js` and `ts/circle.ts`
 
-### 3. Menghitung Sudut Ketiga dari Segitiga
+### 3. Calculate the Third Angle of a Triangle
 - **Input**: a = 80, b = 65
 - **Output**: 35
-- **File**: `js/triangle.js` dan `ts/triangle.ts`
+- **File**: `js/triangle.js` and `ts/triangle.ts`
 
-### 4. Menghitung Selisih Hari Antara Dua Tanggal
+### 4. Calculate the Difference in Days Between Two Dates
 - **Input**: date1 = 2024-03-19, date2 = 2024-03-21
 - **Output**: 2
-- **File**: `js/dateDiff.js` dan `ts/dateDiff.ts`
+- **File**: `js/dateDiff.js` and `ts/dateDiff.ts`
 
-### 5. Mencetak Inisial Nama dalam Huruf Kapital
+### 5. Print Name Initials in Capital Letters
 - **Input**: John Doe
 - **Output**: JD
-- **File**: `js/initials.js` dan `ts/initials.ts`
+- **File**: `js/initials.js` and `ts/initials.ts`
 
-## Cara Penggunaan
+## How to Use
 
 ### JavaScript
 ```javascript
-// Contoh penggunaan fungsi luas persegi panjang
+// Example usage of rectangle area function
 const area = calculateRectangleArea(5, 3);
 console.log(area); // Output: 15
+```
 
-typescript
-// Contoh penggunaan fungsi luas persegi panjang
+### TypeScript
+```typescript
+// Example usage of rectangle area function
 const area: number = calculateRectangleArea(5, 3);
 console.log(area); // Output: 15
+```
