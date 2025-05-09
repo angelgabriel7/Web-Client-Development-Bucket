@@ -1,37 +1,37 @@
-# README.md
+# Pokédex with State Management
 
-[![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)](https://reactjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)](https://tailwindcss.com/)
-[![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)](https://vitejs.dev/)
-[![React Router](https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=reactrouter&logoColor=white)](https://reactrouter.com/)
-[![Medium](https://img.shields.io/badge/Medium-000000?style=flat-square&logo=medium&logoColor=white)](https://bit.ly/3Stx0RP)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-0055FF?style=flat-square&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+![React](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![Redux](https://img.shields.io/badge/Redux-764ABC?style=flat-square&logo=redux&logoColor=white)
+![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
+![RTK Query](https://img.shields.io/badge/RTK_Query-764ABC?style=flat-square&logo=redux&logoColor=white)
+[![Medium](https://img.shields.io/badge/Medium-000000?style=flat-square&logo=medium&logoColor=white)](https://bit.ly/4dbgn7b)
 
 ## 📝 Overview
-Proyek ini mengimplementasikan aplikasi Pokédex menggunakan React Hooks. Aplikasi ini memungkinkan pengguna untuk menjelajahi daftar Pokémon, mencari Pokémon tertentu, menandai Pokémon favorit, dan melihat detail setiap Pokémon.
+This project implements a Pokédex application using React with State Management (Redux). The application allows users to browse Pokémon lists, search for specific Pokémon, bookmark favorites, and view details of each Pokémon.
 
-## ✨ React Hooks yang Digunakan
-- ✅ **useState**: Mengelola state komponen
-- ✅ **useEffect**: Mengatur side effects seperti fetching data
-- ✅ **useContext**: Menyediakan dan mengakses state global
-- ✅ **useReducer**: Mengelola state yang kompleks
-- ✅ **useCallback**: Memoizing fungsi
-- ✅ **useMemo**: Memoizing nilai yang dikalkulasi
-- ✅ **useRef**: Mereferensi elemen DOM atau nilai dalam komponen
-- ✅ **Custom Hooks**: Mengimplementasikan logic yang dapat digunakan kembali
+## ✨ State Management Features Implemented
+- Global State Management using Redux Toolkit
+- API data caching with RTK Query
+- Data persistence with localStorage
+- Custom middleware for storing state in localStorage
+- Filtering and sorting state
+- UI state management (layout, theme, modal)
+- Data normalization for quick access
 
-## 🚀 Fitur
-- Daftar Pokémon dengan paginasi
-- Pencarian Pokémon
-- Tampilan detail Pokémon
-- Toggle mode tampilan (grid/list)
-- Sistem favorit (menggunakan localStorage)
+## 🚀 Application Features
+- Pokémon list with pagination
+- Search and filter Pokémon
+- Pokémon detail view
+- Toggle view mode (grid/list)
+- Favorites system (using localStorage)
+- Filter by name, type, ID
+- Sort by name and ID
+- Favorites view filter
 - Responsive design for mobile and desktop
-- Animasi saat berganti halaman
 
-## 💻 Cara Menjalankan
+## 💻 How to Run
 1. Clone repository
 ```bash
 git clone https://github.com/username/repo-name.git
@@ -43,53 +43,53 @@ cd repo-name
 npm install
 ```
 
-3. Jalankan server development
+3. Run development server
 ```bash
 npm run dev
 ```
 
-4. Build untuk production
+4. Build for production
 ```bash
 npm run build
 ```
 
-## 🧠 Implementasi Hooks
+## 🧠 State Management Implementation
 
-### useState
-Mengatur state lokal seperti tampilan list/grid, state pengurutan, dan state filter.
+### Redux Store
+- **Store Configuration**: Store implementation with Redux Toolkit
+- **Slices**: Modular state with pokemonSlice, uiSlice, and filterSlice
+- **Middleware**: Custom middleware for localStorage persistence
+- **Selectors**: State selection that minimizes re-rendering
 
-### useEffect
-Mengatur fetching data, memfilter Pokémon berdasarkan pencarian, dan menyimpan data ke localStorage.
+### RTK Query
+- **API Integration**: Integrated with PokeAPI
+- **Caching**: Automatic caching of API request results
+- **Transformations**: Transform API data to a more usable format
 
-### useContext dan useReducer
-Mengatur state global aplikasi termasuk daftar Pokémon, favorit, dan filter.
+### Redux Patterns
+- **Normalized State**: Store Pokémon data in a normalized format
+- **Selector Memoization**: Optimization to avoid repeated calculations
+- **Action Creators**: Well-documented and reusable actions
+- **Side Effect Handling**: Managing side effects with middleware
 
-### useCallback
-Mengoptimalkan fungsi handler seperti toggleFavorite dan fetchData.
-
-### useMemo
-Mengoptimalkan kalkulasi seperti pengurutan dan pemfilteran Pokémon.
-
-### Custom Hooks
-- **usePokemonData**: Mengambil dan mengelola data Pokémon
-- **usePokemonDetail**: Mengambil data detail untuk satu Pokémon
-- **useDebounce**: Menunda pencarian untuk mencegah API requests yang berlebihan
-- **useLocalStorage**: Menyimpan dan mengambil data dari localStorage
-
-## 📂 Struktur Proyek
+## 📂 Redux Project Structure
 ```
-src/
-├── assets/            # Gambar, ikon, dan aset lainnya
-├── components/        # Komponen UI yang dapat digunakan kembali
-├── context/           # Context untuk state management
-├── hooks/             # Custom hooks
-├── pages/             # Komponen halaman
-├── styles/            # File CSS
-├── types/             # TypeScript type definitions
-├── App.tsx            # Komponen utama aplikasi
-└── main.tsx           # Entry point
+src/store/
+├── slices/                 # Redux slices (modular state)
+│   ├── pokemonSlice.ts     # Pokémon state (favorites, cache)
+│   ├── uiSlice.ts          # UI state (theme, layout)
+│   └── filterSlice.ts      # Filter and sorting state
+├── api/                    # API endpoints with RTK Query
+│   └── pokemonApi.ts
+├── middleware/             # Custom Redux middleware
+│   └── localStorage.ts
+├── hooks.ts                # Custom hooks for Redux
+└── index.ts                # Store configuration
 ```
+
+## 📚 Read Related Article
+For a deeper understanding of state management in React, read my Medium article: [Understanding State Management in React](https://bit.ly/4dbgn7b)
 
 ---
 
-⭐ Dibuat untuk memenuhi tugas Web Client Development - Project #5 agar menjadi the best Architecture in Asia and A world
+⭐ Created to fulfill Web Client Development - Project #6 ⭐

@@ -1,9 +1,9 @@
 // src/types/pokemon.ts
 export interface Pokemon {
-  id: number;
+  id: string;
   name: string;
   url: string;
-  image: string;
+  imageUrl: string;
 }
 
 export interface PokemonStat {
@@ -12,12 +12,12 @@ export interface PokemonStat {
 }
 
 export interface PokemonDetail {
-  id: number;
+  id: string;
   name: string;
   height: number;
   weight: number;
   types: string[];
   abilities: string[];
   stats: PokemonStat[];
-  image: string;
+  imageUrl: string;
 }

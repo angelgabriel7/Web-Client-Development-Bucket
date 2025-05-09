@@ -1,23 +1,16 @@
 // src/App.tsx
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { Provider } from 'react-redux';
+import { store } from './store';
 import HomePage from './pages/HomePage';
-import DetailPage from './pages/DetailPage';
-import { PokemonProvider } from './context/PokemonContext';
 
-const App: React.FC = () => {
+function App() {
   return (
-    <PokemonProvider>
-      <BrowserRouter>
-        <div className="min-h-screen bg-gray-100">
-          <Routes>
-            <Route path="/" element={<HomePage />} />
-            <Route path="/pokemon/:id" element={<DetailPage />} />
-          </Routes>
-        </div>
-      </BrowserRouter>
-    </PokemonProvider>
+    <Provider store={store}>
+      <div className="min-h-screen bg-gray-100">
+        <HomePage />
+      </div>
+    </Provider>
   );
-};
+}
 
 export default App;
