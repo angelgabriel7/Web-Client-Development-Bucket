@@ -1,25 +1,23 @@
 // src/App.tsx
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import LandingPage from "./pages/LandingPage";
-import ContactPage from "./pages/ContactPage";
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage';
+import DetailPage from './pages/DetailPage';
+import { PokemonProvider } from './context/PokemonContext';
 
-function App() {
+const App: React.FC = () => {
   return (
-    <BrowserRouter>
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
+    <PokemonProvider>
+      <BrowserRouter>
+        <div className="min-h-screen bg-gray-100">
           <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route path="/contact" element={<ContactPage />} />
+            <Route path="/" element={<HomePage />} />
+            <Route path="/pokemon/:id" element={<DetailPage />} />
           </Routes>
-        </main>
-        <Footer />
-      </div>
-    </BrowserRouter>
+        </div>
+      </BrowserRouter>
+    </PokemonProvider>
   );
-}
+};
 
 export default App;

@@ -1,4 +1,7 @@
-# Landing & Contact Page Project
+# README.md
+
+```markdown
+# React Hooks Pokemon App
 
 ![React](https://img.shields.io/badge/-React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
 ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
@@ -6,28 +9,30 @@
 ![Tailwind CSS](https://img.shields.io/badge/-Tailwind_CSS-06B6D4?style=for-the-badge&logo=tailwindcss&logoColor=white)
 ![Vite](https://img.shields.io/badge/-Vite-646CFF?style=for-the-badge&logo=vite&logoColor=white)
 ![React Router](https://img.shields.io/badge/-React_Router-CA4245?style=for-the-badge&logo=reactrouter&logoColor=white)
+[![Medium](https://img.shields.io/badge/-Medium-000000?style=for-the-badge&logo=medium&logoColor=white)](https://bit.ly/3Stx0RP)
 ![Framer Motion](https://img.shields.io/badge/-Framer_Motion-0055FF?style=for-the-badge&logo=framer&logoColor=white)
 
-## 📖 Artikel Medium
-Baca artikel tentang React/CSS Framework: [https://bit.ly/4jVxbSk](https://bit.ly/4jVxbSk)
-
 ## 📝 Overview
-Proyek ini mengimplementasikan landing page dan contact page yang responsif menggunakan React, TypeScript, dan Tailwind CSS. UI dibuat berdasarkan spesifikasi desain yang disediakan dalam tugas.
+Proyek ini mengimplementasikan aplikasi Pokédex menggunakan React Hooks. Aplikasi ini memungkinkan pengguna untuk menjelajahi daftar Pokémon, mencari Pokémon tertentu, menandai Pokémon favorit, dan melihat detail setiap Pokémon.
 
-## ✨ Fitur
-- ✅ Desain responsif untuk semua ukuran layar
-- ✅ Komponen interaktif dengan animasi
-- ✅ Validasi form pada halaman kontak
-- ✅ Routing antar halaman
-- ✅ Animasi transisi halaman
+## ✨ React Hooks yang Digunakan
+- ✅ **useState**: Mengelola state komponen
+- ✅ **useEffect**: Mengatur side effects seperti fetching data
+- ✅ **useContext**: Menyediakan dan mengakses state global
+- ✅ **useReducer**: Mengelola state yang kompleks
+- ✅ **useCallback**: Memoizing fungsi
+- ✅ **useMemo**: Memoizing nilai yang dikalkulasi
+- ✅ **useRef**: Mereferensi elemen DOM atau nilai dalam komponen
+- ✅ **Custom Hooks**: Mengimplementasikan logic yang dapat digunakan kembali
 
-## 🚀 Teknologi yang Digunakan
-- **React 18**: Library JavaScript untuk membangun antarmuka pengguna
-- **TypeScript**: Menambahkan static typing ke JavaScript
-- **Tailwind CSS**: Framework CSS utility-first untuk styling
-- **Vite**: Build tool yang cepat untuk pengembangan frontend
-- **React Router**: Library routing untuk aplikasi React
-- **Framer Motion**: Library animasi untuk React
+## 🚀 Fitur
+- Daftar Pokémon dengan paginasi
+- Pencarian Pokémon
+- Tampilan detail Pokémon
+- Toggle mode tampilan (grid/list)
+- Sistem favorit (menggunakan localStorage)
+- Responsive design for mobile and desktop
+- Animasi saat berganti halaman
 
 ## 💻 Cara Menjalankan
 1. Clone repository
@@ -51,48 +56,43 @@ npm run dev
 npm run build
 ```
 
+## 🧠 Implementasi Hooks
+
+### useState
+Mengatur state lokal seperti tampilan list/grid, state pengurutan, dan state filter.
+
+### useEffect
+Mengatur fetching data, memfilter Pokémon berdasarkan pencarian, dan menyimpan data ke localStorage.
+
+### useContext dan useReducer
+Mengatur state global aplikasi termasuk daftar Pokémon, favorit, dan filter.
+
+### useCallback
+Mengoptimalkan fungsi handler seperti toggleFavorite dan fetchData.
+
+### useMemo
+Mengoptimalkan kalkulasi seperti pengurutan dan pemfilteran Pokémon.
+
+### Custom Hooks
+- **usePokemonData**: Mengambil dan mengelola data Pokémon
+- **usePokemonDetail**: Mengambil data detail untuk satu Pokémon
+- **useDebounce**: Menunda pencarian untuk mencegah API requests yang berlebihan
+- **useLocalStorage**: Menyimpan dan mengambil data dari localStorage
+
 ## 📂 Struktur Proyek
 ```
-├── public/               # Asset statis
-├── src/
-│   ├── assets/           # Gambar, ikon, dan aset lainnya
-│   ├── components/       # Komponen UI yang dapat digunakan kembali
-│   │   ├── Button/
-│   │   ├── Card/
-│   │   ├── Navbar/
-│   │   └── Footer/
-│   ├── pages/            # Komponen halaman
-│   │   ├── LandingPage/
-│   │   └── ContactPage/
-│   ├── styles/           # File CSS
-│   ├── App.tsx           # Komponen utama aplikasi
-│   └── main.tsx          # Entry point
-├── .gitignore
-├── index.html
-├── package.json
-├── tailwind.config.js
-├── tsconfig.json
-└── vite.config.ts
+src/
+├── assets/            # Gambar, ikon, dan aset lainnya
+├── components/        # Komponen UI yang dapat digunakan kembali
+├── context/           # Context untuk state management
+├── hooks/             # Custom hooks
+├── pages/             # Komponen halaman
+├── styles/            # File CSS
+├── types/             # TypeScript type definitions
+├── App.tsx            # Komponen utama aplikasi
+└── main.tsx           # Entry point
 ```
-
-## 👨‍💻 Implementasi
-- Menggunakan pendekatan mobile-first untuk desain responsif
-- Komponen yang dapat digunakan kembali untuk konsistensi UI
-- Menerapkan praktik terbaik TypeScript untuk type safety
-- Optimasi performa dengan React hooks
-- Implementasi animasi yang halus dengan Framer Motion
-
-## 📱 Screenshot
-<!-- Screenshot akan ditambahkan setelah proyek selesai -->
-
-## 📚 Referensi
-- [React Documentation](https://react.dev/)
-- [TypeScript Documentation](https://www.typescriptlang.org/docs/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/docs)
-- [Vite Documentation](https://vitejs.dev/guide/)
-- [React Router Documentation](https://reactrouter.com/en/main)
-- [Framer Motion Documentation](https://www.framer.com/motion/)
 
 ---
 
-⭐ Dibuat untuk memenuhi tugas Web Client Development - Project #4 ⭐
+⭐ Dibuat untuk memenuhi tugas Web Client Development - Project #5 agar menjadi the best Architecture in Asia and A world
