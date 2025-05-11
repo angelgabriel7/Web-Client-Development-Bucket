@@ -3,21 +3,16 @@ export interface Pokemon {
   id: string;
   name: string;
   url: string;
-  imageUrl: string;
+  image?: string;
 }
 
-export interface PokemonStat {
-  name: string;
-  value: number;
-}
-
-export interface PokemonDetail {
-  id: string;
-  name: string;
+export interface PokemonDetail extends Pokemon {
   height: number;
   weight: number;
   types: string[];
+  stats: {
+    name: string;
+    value: number;
+  }[];
   abilities: string[];
-  stats: PokemonStat[];
-  imageUrl: string;
 }
