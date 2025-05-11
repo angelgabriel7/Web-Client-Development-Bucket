@@ -3,7 +3,7 @@ import { configureStore } from '@reduxjs/toolkit';
 import pokemonReducer from './slices/pokemonSlice';
 import uiReducer from './slices/uiSlice';
 import filterReducer from './slices/filterSlice';
-import { pokemonApi } from './api/pokemonApi'; // Pastikan ini diimpor
+import { pokemonApi } from './api/pokemonApi';
 import { localStorageMiddleware } from './middleware/localStorage';
 
 export const store = configureStore({
@@ -11,12 +11,12 @@ export const store = configureStore({
     pokemon: pokemonReducer,
     ui: uiReducer,
     filter: filterReducer,
-    [pokemonApi.reducerPath]: pokemonApi.reducer, // Tambahkan ini
+    [pokemonApi.reducerPath]: pokemonApi.reducer,
   },
   middleware: (getDefaultMiddleware) => 
     getDefaultMiddleware()
-      .concat(localStorageMiddleware)
-      .concat(pokemonApi.middleware), // Tambahkan middleware RTK Query
+      .concat(pokemonApi.middleware)
+      .concat(localStorageMiddleware),
 });
 
 export type RootState = ReturnType<typeof store.getState>;
