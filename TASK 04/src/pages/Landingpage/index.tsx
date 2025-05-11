@@ -6,7 +6,6 @@ import { FiArrowRight, FiCheck } from "react-icons/fi";
 import Card from "../../components/Card";
 
 const LandingPage = () => {
-  // Animation variants
   const fadeIn = {
     hidden: { opacity: 0 },
     visible: { opacity: 1, transition: { duration: 0.6 } }
@@ -55,7 +54,6 @@ const LandingPage = () => {
 
   return (
     <div className="bg-gray-50">
-      {/* Hero Section */}
       <section className="py-20 bg-gradient-to-b from-white to-indigo-50">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
@@ -89,9 +87,9 @@ const LandingPage = () => {
             >
               <div className="bg-white p-4 rounded-lg shadow-lg">
                 <img 
-                  src="https://via.placeholder.com/600x400" 
+                  src="https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Hero+Image" 
                   alt="Hero Illustration" 
-                  className="rounded-md w-full"
+                  className="w-full h-auto rounded-lg shadow-lg" 
                 />
               </div>
             </motion.div>
@@ -99,7 +97,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Services Section */}
       <section id="services" className="py-16">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -131,7 +128,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Features Section */}
       <section id="about" className="py-16 bg-white">
         <div className="container mx-auto px-4">
           <div className="flex flex-col md:flex-row items-center">
@@ -143,9 +139,9 @@ const LandingPage = () => {
               variants={slideUp}
             >
               <img 
-                src="https://via.placeholder.com/600x400" 
+                src="https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Features+Image" 
                 alt="Features Illustration" 
-                className="rounded-lg shadow-lg"
+                className="w-full h-auto rounded-lg shadow-lg"
               />
             </motion.div>
             
@@ -181,7 +177,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-      {/* Call to Action */}
       <section className="py-16 bg-indigo-600 text-white">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
