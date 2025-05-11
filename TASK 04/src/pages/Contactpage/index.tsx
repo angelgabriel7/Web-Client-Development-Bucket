@@ -112,7 +112,7 @@ const ContactPage = () => {
                 <h3 className="font-semibold text-gray-900 mb-4">Connect With Us</h3>
                 <div className="flex space-x-4">
                   {['facebook', 'twitter', 'instagram', 'linkedin'].map((social) => (
-                    
+                    <a
                       key={social}
                       href={`https://${social}.com`}
                       target="_blank"
