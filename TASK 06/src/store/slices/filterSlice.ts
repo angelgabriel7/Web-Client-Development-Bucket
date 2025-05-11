@@ -34,6 +34,9 @@ export const filterSlice = createSlice({
     setSortBy: (state, action: PayloadAction<'id' | 'name'>) => {
       state.sortBy = action.payload;
     },
+    setSortOrder: (state, action: PayloadAction<'asc' | 'desc'>) => {
+      state.sortOrder = action.payload;
+    },
     toggleSortOrder: (state) => {
       state.sortOrder = state.sortOrder === 'asc' ? 'desc' : 'asc';
     },
@@ -48,6 +51,7 @@ export const {
   setTypeFilter, 
   toggleFavorites, 
   setSortBy, 
+  setSortOrder,
   toggleSortOrder,
   resetFilters 
 } = filterSlice.actions;
