@@ -4,6 +4,7 @@ import Button from "../../components/Button";
 import { Link } from "react-router-dom";
 import { FiArrowRight, FiCheck } from "react-icons/fi";
 import Card from "../../components/Card";
+import heroImage from './imagehero.png';
 
 const LandingPage = () => {
   const fadeIn = {
@@ -87,7 +88,7 @@ const LandingPage = () => {
             >
               <div className="bg-white p-4 rounded-lg shadow-lg">
                 <img 
-                  src="https://via.placeholder.com/600x400/4F46E5/FFFFFF?text=Hero+Image" 
+                  src={heroImage}
                   alt="Hero Illustration" 
                   className="w-full h-auto rounded-lg shadow-lg" 
                 />
