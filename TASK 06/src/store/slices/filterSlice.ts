@@ -31,6 +31,9 @@ export const filterSlice = createSlice({
     toggleFavorites: (state) => {
       state.favorites = !state.favorites;
     },
+    toggleFavoritesOnly: (state) => {
+      state.favorites = !state.favorites;
+    },
     setSortBy: (state, action: PayloadAction<'id' | 'name'>) => {
       state.sortBy = action.payload;
     },
@@ -49,7 +52,8 @@ export const filterSlice = createSlice({
 export const { 
   setSearchTerm, 
   setTypeFilter, 
-  toggleFavorites, 
+  toggleFavorites,
+  toggleFavoritesOnly,
   setSortBy, 
   setSortOrder,
   toggleSortOrder,
